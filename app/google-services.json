@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "952782014530",
+    "firebase_url": "https://dailycash-d4070.firebaseio.com",
+    "project_id": "dailycash-d4070",
+    "storage_bucket": "dailycash-d4070.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:952782014530:android:ee997dcb198b867f",
+        "android_client_info": {
+          "package_name": "com.angularstack.dailycash"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "952782014530-scprts8ntt2i4llgrb5jtbvd23pffqn9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.angularstack.dailycash",
+            "certificate_hash": "a69f9e61df7efbd27016f001ebeda7c163e3fa51"
+          }
+        },
+        {
+          "client_id": "952782014530-ldj8hmq7v8hsor1kcm0bp7so2a9elelp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA98O3d2G0Md2JBok46MPZCBvMOLMyh71Q"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "952782014530-ldj8hmq7v8hsor1kcm0bp7so2a9elelp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

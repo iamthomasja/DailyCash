@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:gravity="center"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:background="@drawable/gredient">
+
+
+    <EditText
+        android:id="@+id/name_id"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="157dp"
+        android:layout_marginTop="41dp"
+        android:layout_marginEnd="159dp"
+        android:layout_marginBottom="14dp"
+        android:background="@drawable/rounded_edit_text"
+        android:drawableLeft="@drawable/ic_action_user_light"
+        android:hint="   Name"
+        android:inputType="textVisiblePassword"
+        android:paddingLeft="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/email_id"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/phone_id"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="157dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="159dp"
+        android:layout_marginBottom="14dp"
+        android:background="@drawable/rounded_edit_text"
+        android:drawableLeft="@drawable/ic_action_phone_light"
+        android:hint="   Phone Number"
+        android:inputType="textVisiblePassword"
+        android:paddingLeft="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/refferal_id"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email_id">
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/refferal_id"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="157dp"
+        android:layout_marginEnd="159dp"
+        android:layout_marginBottom="35dp"
+        android:background="@drawable/rounded_edit_text"
+        android:drawableLeft="@drawable/ic_action_cash_icon"
+        android:hint="   Referral code(if any)"
+        android:inputType="textVisiblePassword"
+        android:paddingLeft="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/submit_id"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phone_id">
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/email_id"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="157dp"
+        android:layout_marginEnd="159dp"
+        android:background="@drawable/rounded_edit_text"
+        android:drawableLeft="@drawable/ic_action_email_light"
+        android:hint="   Email"
+        android:inputType="textVisiblePassword"
+        android:paddingLeft="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/phone_id"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name_id">
+
+    </EditText>
+
+    <Button
+        android:id="@+id/submit_id"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="157dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="159dp"
+        android:layout_marginBottom="188dp"
+        android:background="@drawable/button_rounded_orange"
+        android:gravity="center"
+        android:text="   Submit    "
+        android:textColor="#ffff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/refferal_id" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="157dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="159dp"
+        android:layout_marginBottom="41dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="SIGN UP"
+        android:textColor="#ffff"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/name_id"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</android.support.constraint.ConstraintLayout>

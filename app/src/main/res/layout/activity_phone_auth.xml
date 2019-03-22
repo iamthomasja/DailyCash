@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="4"
+    android:background="@drawable/gredient">
+
+    <EditText
+        android:id="@+id/fieldPhoneNumber"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="63dp"
+        android:layout_marginTop="49dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="16dp"
+        android:layout_weight="1.0"
+        android:background="@drawable/rounded_edit_text"
+        android:drawableLeft="@drawable/ic_action_phone_light"
+        android:hint="   +911234567890"
+        android:inputType="phone"
+        android:paddingLeft="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/fieldVerificationCode"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_chainStyle="spread_inside" />
+
+    <EditText
+        android:id="@+id/fieldVerificationCode"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="63dp"
+        android:layout_marginEnd="40dp"
+        android:layout_weight="1.0"
+        android:background="@drawable/rounded_edit_text"
+        android:drawableLeft="@drawable/ic_action_done_icon"
+        android:hint="   Verification Code"
+        android:inputType="number"
+        android:paddingLeft="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonStartVerification"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fieldPhoneNumber" />
+
+    <Button
+        android:id="@+id/buttonStartVerification"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="78dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="318dp"
+        android:layout_weight="1.0"
+        android:background="@drawable/button_rounded_orange"
+        android:text="Send"
+        android:theme="@style/ThemeOverlay.MyDarkButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/buttonVerifyPhone"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fieldVerificationCode" />
+
+    <Button
+        android:id="@+id/buttonVerifyPhone"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="19dp"
+        android:layout_marginBottom="318dp"
+        android:layout_weight="1.0"
+        android:background="@drawable/button_rounded"
+        android:text="@string/verify_phone_auth"
+        android:theme="@style/ThemeOverlay.MyDarkButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/buttonResend"
+        app:layout_constraintStart_toEndOf="@+id/buttonStartVerification"
+        app:layout_constraintTop_toBottomOf="@+id/fieldVerificationCode" />
+
+    <Button
+        android:id="@+id/buttonResend"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="65dp"
+        android:layout_marginBottom="318dp"
+        android:layout_weight="1.0"
+        android:background="@drawable/button_rounded"
+        android:text="@string/resend_phone_auth"
+        android:theme="@style/ThemeOverlay.MyDarkButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/buttonVerifyPhone"
+        app:layout_constraintTop_toBottomOf="@+id/fieldVerificationCode" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="63dp"
+        android:layout_marginTop="69dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="49dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Verify with Phone Number"
+        android:textColor="#ffff"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/fieldPhoneNumber"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
+
+
